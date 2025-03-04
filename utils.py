@@ -100,7 +100,6 @@ async def get_shopee_reviews(shop_id, item_id):
                         
                         try:
                             comment = r.get("comment", "")      # If there is comment for the rating
-                            print(f'{comment}')
                         except:
                             print(f'no comment for rating {rating}')
                             break
